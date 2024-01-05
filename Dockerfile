@@ -1,0 +1,5 @@
+FROM node:latest
+
+ENV DIRPATH=/path
+ENV DIRNAME=app
+WORKDIR $DIRPATH/$DIRNAME
