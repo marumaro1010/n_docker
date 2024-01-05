@@ -1,4 +1,8 @@
 FROM node:latest
 
-ENV DIRNAME=app
-WORKDIR /$DIRNAME
+WORKDIR /var/www
+COPY /app /var/www
+
+RUN npm install
+
+EXPOSE 8080
